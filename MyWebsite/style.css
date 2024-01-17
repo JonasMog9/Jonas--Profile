@@ -1,0 +1,242 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #d9d9d9; /* Soft grey for regular text */
+    line-height: 2;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+/* ----------------------------------------Header--------------------------------------- */
+#header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #4DA8DA; /* Blue for links */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #82D1F5; /* Lighter blue for hover effect */
+}
+
+.logo {
+    height: 50px;
+}
+
+/* ----------------------------------------About--------------------------------------- */
+#about {
+    padding: 50px; /* Adjust as needed */
+}
+
+#about h2, #Education h2, #projects h2, #contact h2 {
+    color: #fff; /* White for main titles */
+}
+
+.about-container {
+    display: flex;
+    align-items: center; /* This aligns the items vertically at the center */
+    justify-content: space-between; /* This adds space between the text and the image */
+}
+
+.about-text {
+    flex: 1; /* Takes up the remaining space */
+    padding-right: 10%; /* Spacing between text and image */
+}
+
+.about-image {
+    flex: 0 0 auto; /* Do not grow, do not shrink, but use auto basis */
+    max-width: 35%; /* Adjust based on your image size */
+    padding-right: 10%;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid #ddd; /* Light grey border */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 5px 5px 10px #4DA8DA; /* Blue shadow */
+}
+
+.about-text, .about-image {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* ----------------------------------------Education--------------------------------------- */
+section#Education {
+    text-align: center;
+}
+
+.education-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.university h3, .courses h3, .Online h3 {
+    color: #4DA8DA; /* Blue for subheadings */
+    text-align: center;
+}
+
+.university, .courses{
+    margin: 10px 0;
+    text-align: left; /* Aligns text to the left */
+}
+
+/* ----------------------------------------Projects--------------------------------------- */
+#projects {
+    padding: 50px; /* Adjust as needed */
+}
+
+.project-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically at the center */
+    justify-content: space-between; /* Adds space between the image and text */
+    margin-bottom: 30px;
+}
+
+.project-text {
+    flex: 1; /* Takes up the remaining space */
+    padding-left: 10%; /* Spacing between image and text */
+}
+
+.project-image {
+    flex: 0 0 auto; /* Do not grow, do not shrink, but use auto basis */
+    max-width: 50%; /* Adjust based on your image size */
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid #ddd; /* Light grey border */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 5px 5px 10px #4DA8DA; /* Blue shadow */
+}
+
+.project-title {
+    color: #4DA8DA; /* Blue color for project titles */
+}
+
+.project-links a {
+    display: inline-block;
+    margin-right: 15px; /* Spacing between links */
+    color: #82D1F5; /* Lighter blue for links */
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+.about-text, .about-image {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* ----------------------------------------Contact--------------------------------------- */
+#contact {
+    text-align: center;
+    padding: 50px;
+    color: #fff; /* Adjust text color as needed */
+}
+
+#contact h2 {
+    margin-bottom: 20px; /* Spacing under the title */
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact .input-field,
+#contact .textarea-field,
+#contact .submit-button {
+    width: 80%; /* Consistent width for all form elements */
+    padding: 10px;
+    margin-bottom: 15px; /* Spacing between fields */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#contact .input-field,
+#contact .textarea-field {
+    border: 1px solid #ddd; /* Border color */
+    background-color: #333; /* Background color of fields */
+    color: #fff; /* Text color */
+}
+
+#contact .textarea-field {
+    height: 150px; /* Adjust height as needed */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+#contact .submit-button {
+    border: none;
+    background-color: #4DA8DA; /* Button color */
+    color: #fff; /* Button text color */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#contact .submit-button:hover {
+    background-color: #82D1F5; /* Lighter color on hover */
+}
+
+
+/* ----------------------------------------Footer--------------------------------------- */
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* ----------------------------------------Animations and Keyframes--------------------------------------- */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ----------------------------------------Responsive Design--------------------------------------- */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}

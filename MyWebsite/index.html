@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/JM.png" alt="Logo" class="logo">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>As an ambitious Computer Science student at Wilfrid Laurier University, I am also deeply engaged in the realms of blockchain technologies and the rest of the web3 space. My academic pursuits are complemented by a strong foundation in key areas like Object-Oriented Programming (Java), Data Structures (Python and C), and Solidity. This technical grounding is enriched by my passion for problem-solving and a keen interest in emerging technologies.<Br>
+
+                    <br>
+                    Eager to apply my knowledge in a practical setting, I am looking for opportunities where I can contribute to challenging projects. Known for my analytical skills and quick learning abilities, I am ready to tackle complex challenges and add value to a forward-thinking team. My goal is to blend my technical expertise with my enthusiasm for cutting-edge technologies to make a significant impact in the tech industry.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/Me.JPG" alt="Your Image">
+            </div>
+        </div>
+    </section>
+    
+    <section id="Education">
+        <h2>My Education</h2>
+        <div class="education-details">
+            <div class="university">
+                <h3>Wilfrid Laurier University</h3>
+                <p>Bachelor of Science: Computer Science<br>
+                   Minor: Leadership<br>
+                   Expected Graduation Date: 04/2026
+                </p>
+            </div>
+            <div class="courses">
+                <h3>Notable Courses</h3>
+                <p>
+                    CP212: Windows App. Programming (VBA/excel)<br>
+                    CP213: Object Oriented Programming (Java)<br>
+                    CP214: Discrete Structures for Computer Science<br>
+                    CP216: Intro to Microprocessors<br>
+                    CP264: Data Structures II (C)<br>
+                    CP164: Data structures I (Python)<br>
+                    MA122: Linear Algebra<br>
+                    MA103: Calculus I<br>
+                    
+                </p>
+            </div>
+            <div class="Online">
+                <h3> Non-University Online Course</h4>
+                <p>CryptoZombies: Beginner to Intermediate Smart Contracts (Solidity)</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project-image">
+                <img src="images/RKL.png" alt="RKL">
+            </div>
+            <div class="project-text">
+                <h3 class="project-title">RKL Lineup Tester</h3>
+                <p>Rumble Kong League is an NFT collection of 10000 Kongs that can be used in a 3 on 3 basketball play-to-earn video game. These Kongs have stats engraved in their metadata and this tool can be used to compare Kongs and their teams with each other.</p>
+                <div class="project-links">
+                    <a href="https://rkl-teamtest.netlify.app" target="_blank">Website</a>
+                    <a href="https://github.com/JonasMog9/RKL-Tool" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-text">
+                <h3 class="project-title">AI Photo Generator</h3>
+                <p> Welcome to the Custom Children's Story Generator, where your NFTs come to life in exciting storybooks! Choose your favorite NFT from any of the available collections, enter its Token ID, and watch as we generate a unique series of images that bring your NFT into the world of storytelling. Perfect for creating personalized children's books or just to see your NFT in fun and imaginative scenarios.<br>
+                <br>
+                    Keep in mind this site is still in Beta as we wait for open AI to update their image generator API.
+                </p>
+                <div class="project-links">
+                    <a href="https://ai-picture-book-generator.netlify.app/" target="_blank">Website</a>
+                    <a href="https://github.com/JonasMog9?tab=repositories" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="images/AI.png" alt="AI Photo Generator">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form name="contact" method="POST" data-netlify="true">
+            <input type="text" name="name" placeholder="Your Name" class="input-field">
+            <input type="email" name="email" placeholder="Your Email" class="input-field">
+            <textarea name="message" placeholder="Your Message" class="textarea-field"></textarea>
+            <button type="submit" class="submit-button">Send</button>
+        </form>
+    </section>
+    
+
+    <footer>
+        <p>© 2024 by Jonas Mogilnicki. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
